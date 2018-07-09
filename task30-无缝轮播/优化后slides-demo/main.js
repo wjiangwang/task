@@ -1,5 +1,5 @@
-初始化()
 let n;
+初始化()
 setInterval(function() {  
   makeLeave(getImg(n))
       .one('transitionend',function(e){
@@ -53,7 +53,7 @@ function makeLeave($node){
 
 
 function 初始化(){
-  let n=1
+  n=1
   $('.images>img:nth-child(1)').addClass('enter')
   $('.images>img:nth-child(n+2)').addClass('stay')
 }
