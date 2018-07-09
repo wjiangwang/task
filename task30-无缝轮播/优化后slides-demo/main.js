@@ -53,7 +53,7 @@ function makeLeave($node){
 
 
 function 初始化(){
-  n=1
+  let n=1
   $('.images>img:nth-child(1)').addClass('enter')
   $('.images>img:nth-child(n+2)').addClass('stay')
 }
