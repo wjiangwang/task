@@ -3,7 +3,7 @@ let current = 1
 initialization()
 
 $('.buttons').on('click', 'span', function (e) {
-  let current = $(e.currentTarget).index() + 1
+  current = $(e.currentTarget).index() + 1
   goSlide(current)
 })
 
@@ -16,16 +16,33 @@ $('.window').on('mouseleave', function () {
   timeId = setTimer()
 })
 
-$('#pre').on('click', function () {
-  goSlide(lastCurrent - 1)
+
+
+
+
+
+
+
+
+  $('#pre').on('click', function () {
+    goSlide(lastCurrent - 1)
+    current=lastCurrent+1
+  })
+  $('#next').on('click', function () {
+    goSlide(lastCurrent + 1)
+    current=lastCurrent+1
+  })
+
+
+
+
+document.addEventListener('visibilitychange',function(){
+  if(document.hidden){
+    window.clearInterval(timeId)
+  }else{
+    timeId = setTimer()
+  }
 })
-$('#next').on('click', function () {
-  goSlide(lastCurrent + 1)
-  console.log(lastCurrent)
-})
-
-
-
 
 
 
