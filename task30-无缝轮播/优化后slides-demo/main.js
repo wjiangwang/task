@@ -1,6 +1,9 @@
 let n;
 初始化()
+<<<<<<< HEAD
 
+=======
+>>>>>>> 9e9661592122a305abfba703f9a32a58adcaa5d8
 setInterval(function() {  
   makeLeave(getImg(n))
       .one('transitionend',function(e){
