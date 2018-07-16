@@ -1,5 +1,6 @@
-初始化()
 let n;
+初始化()
+
 setInterval(function() {  
   makeLeave(getImg(n))
       .one('transitionend',function(e){
